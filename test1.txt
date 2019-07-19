@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 G is an alphabet
+=======
+1
+>>>>>>> Step 22 - added 1 as text
