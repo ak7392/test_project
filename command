@@ -55,4 +55,6 @@ This can be done as below –
 28.	git checkout master
 29.	git merge testing (Since all changes are alredy up to date, merge will be sccuessfull).
 30.	Out of many instances master branch may be considered as main workflow or source code/production environment and the code changes you are making, which can be incorporated in future could be the part of testing branch. In other instance testing branch may also be compared to other workflows of your team and by doing rebasing on your master branch all commits are now added on top of the latest changes that happened parallel to your own work / source code.
-
+After rebasing is done and we merge testing branch again into master branch, there will be one extraneous commit because of this merge.
+So Testing will act a parallel directory where new features are getting added and master branch can be considered as a source code.
+We update master peridically to be in sync with changes and rebase is perfect way to do that since it keeps our project history clean by adding linear commits whereas merge my create confusion for developers later in order to undertand history (As it does extraneous commits for any upstream changes).
